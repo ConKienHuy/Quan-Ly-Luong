@@ -1,4 +1,4 @@
-package DTO;
+	package DTO;
 
 public class LuongDTO {
 	private String MaNV;
@@ -11,7 +11,7 @@ public class LuongDTO {
 	
 	}
 	
-	public LuongDTO(String MaNV, int nam, int thang, int SoNgayLV, double TienCongNgay, double TienLuongThang) {
+	public LuongDTO(String MaNV, int thang, int nam, int SoNgayLV, double TienCongNgay, double TienLuongThang) {
 		this.MaNV = MaNV;
 		this.nam = nam;
 		this.thang = thang;
@@ -56,6 +56,11 @@ public class LuongDTO {
 	public void setTienLuongThang(double tienLuongThang) {
 		TienLuongThang = tienLuongThang;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "LuongDTO [MaNV=" + MaNV + ", nam=" + nam + ", thang=" + thang + ", SoNgayLV=" + SoNgayLV
+				+ ", TienCongNgay=" + TienCongNgay + ", TienLuongThang=" + TienLuongThang + "]";
+	}
 	
 }
